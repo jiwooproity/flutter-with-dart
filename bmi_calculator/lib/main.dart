@@ -1,6 +1,5 @@
-import 'package:flutter_project/main_page.dart';
-import 'package:flutter_project/ios_style_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_study/main/main_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -9,14 +8,12 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Material 2 Theme Example',
+      title: 'Flutter Demo',
       theme: ThemeData(useMaterial3: false),
-      // home: const MainPage(),
-      home: const IosStyleScreen()
+      home: const MainScreen()
     );
   }
 }
