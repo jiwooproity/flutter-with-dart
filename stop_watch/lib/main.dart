@@ -1,4 +1,7 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
+import 'package:stop_watch/stop_watch_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,8 +14,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: ThemeData(colorScheme: .fromSeed(seedColor: Colors.deepPurple)),
-      home: null,
+      theme: ThemeData(useMaterial3: false),
+      home: const StopWatchScreen(),
     );
   }
 }
