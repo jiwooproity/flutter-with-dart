@@ -171,7 +171,7 @@ class _StopWatchScreenState extends State<StopWatchScreen> {
               ),
             ),
             Container(
-              height: 250,
+              height: 300,
               color: Colors.black,
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
