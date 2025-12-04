@@ -1,0 +1,5 @@
+package com.jiwoo.dev.stop_watch
+
+import io.flutter.embedding.android.FlutterActivity
+
+class MainActivity : FlutterActivity()
