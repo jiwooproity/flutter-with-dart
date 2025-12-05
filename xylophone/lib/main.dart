@@ -47,7 +47,7 @@ class _XylophoneState extends State<Xylophone> {
 
   Future<void> initAudioPlayers() async {
     final List<String> notes = [
-      "do1.wav",
+      "do.wav",
       "re.wav",
       "mi.wav",
       "fa.wav",
@@ -59,13 +59,7 @@ class _XylophoneState extends State<Xylophone> {
 
     for (final note in notes) {
       final player = AudioPlayer();
-      try {
-        await player.setAsset('assets/$note');
-      } catch (e) {
-        if (kDebugMode) {
-          print(e);
-        }
-      }
+      await player.setAsset('assets/$note');
       _audioPlayers.add(player);
     }
 
